@@ -192,7 +192,7 @@ angular.module('api.rna', [])
             }
 
             // We create a new http request specifying the rank of the willed page
-            var url = 'https://production1.entreprise.data.gouv.fr/api/rna/v1/full_text/' + associationName + '?per_page=' + PER_PAGE + '&page=' + pageRank + '&departement=' + associationDepartment;
+            var url = 'https://entreprise.data.gouv.fr/api/rna/v1/full_text/' + associationName + '?per_page=' + PER_PAGE + '&page=' + pageRank + '&departement=' + associationDepartment;
 
             $http.get(url).
                 success(function (data, status)  

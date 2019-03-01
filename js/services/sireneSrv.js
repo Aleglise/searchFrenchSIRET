@@ -691,10 +691,11 @@ angular.module('api.sirene', [])
 
                     var filteredArr = filterEstablishment(data.etablissement, establishmentName);
 
-                    // We use the setEstablishmentType() function on each establishment of the filterdArr with the map() function array before concat result.resultsTable and filteredArr
-                    result.resultsTable = result.resultsTable.concat(filteredArr.map(function(establishment) {
-                        setEstablishmentType(establishment);
-                    }));
+                    // We use the setEstablishmentType() function on each establishment of the filterdArr with the map() function array before concat result.resultsTable and filteredArr                    
+                    var resultMap = filteredArr.map(function(establishment) {
+                        return setEstablishmentType(establishment);
+                    });
+                    result.resultsTable = result.resultsTable.concat(resultMap);
                                             
                     callback(null, result);
                     return;
