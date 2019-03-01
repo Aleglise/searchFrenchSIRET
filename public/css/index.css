@@ -1,0 +1,46 @@
+h1{
+    color: red;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.info{
+    display: block;
+}
+
+.label-title{
+    display: inline-block;
+    color: green;
+    font-weight: 500;
+    width: 120px;
+}
+
+.establishments-infos{
+    padding: 12px;
+    margin: 12px;
+    border: solid 1px rgb(243, 7, 7);
+}
+
+.association-infos{
+    padding: 12px;
+    margin: 12px; 
+    border: solid 1px rgb(29, 5, 243);
+}
+
+.errorMessage{
+    color: red;
+}
+
+.establishments_results{
+    float: left;
+    width : 50%; 
+    
+}
+
+.associations-results{
+    float: right;
+    width : 50%; 
+    
+}
